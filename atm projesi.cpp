@@ -35,7 +35,7 @@ void sifreKontrol(int password, int& Hak, Hesap& kullanici)
 
 	if (Hak == 0)
 	{
-		throw "3 Defa Yanlis Sifre Girdiginiz Ýcin Kartiniz Bloke Edilmistir Subeden Actýrabilirsiniz Iyi Gunler...\n";
+		throw "3 Defa Yanlis Sifre Girdiginiz Ä°cin Kartiniz Bloke Edilmistir Subeden ActÄ±rabilirsiniz Iyi Gunler...\n";
 	}
 }
 
@@ -112,7 +112,7 @@ int main()
 	{
 		int password, islem, GirilenHesapNo, BulunanIndeks = -1, denemeHakki = 3;
 		char secim;
-		cout << "Lütfen Kartinizi Giriniz.(Simulasyon Oldugu Icin Kart Okuma Yapamýyoruz Bu Nedenle Hesap Numarasini Manuel Alacagiz)\n";
+		cout << "Lutfen Kartinizi Giriniz.(Simulasyon Oldugu Icin Kart Okuma YapamÄ±yoruz Bu Nedenle Hesap Numarasini Manuel Alacagiz)\n";
 		cin >> GirilenHesapNo;
 		for (int i = 0; i < kullanicilar.size(); i++)
 		{
@@ -137,7 +137,7 @@ int main()
 		{
 
 		cout << "Hosgeldiniz " << kullanici.KullaniciAdi << "\nHesapNo:" << kullanici.HesapNo << "\nYapmak Istediginiz Islemi Seciniz\n";
-		cout << "1. PARA YATIRMA\n2. PARA CEKME\n3. BAKIYE SORGULAMA";
+		cout << "1. PARA YATIRMA\n2. PARA CEKME\n3. BAKIYE SORGULAMA\n";
 		cin >> islem;
 		while (islem < 1 || islem>3)
 		{
